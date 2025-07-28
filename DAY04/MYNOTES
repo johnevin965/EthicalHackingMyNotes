@@ -1,59 +1,56 @@
-## 🧾 Linux Commands
+1. TCP vs UDP
 
-* `ls` – List directory contents
-* `cd` – Change directory
-* `touch` – Create a new empty file
-* `echo` – Display a line of text
-* `man` – Manual pages/help for commands
-* `ls -lh` – List contents in human-readable format
-* `cp` – Copy files or directories
-* `mv` – Move/rename files or directories
-* `chmod` – Change file permissions
+Think of TCP as the careful communicator — it makes sure your message gets through, and in the right order. It checks every step, resends anything that gets lost, and waits for confirmation, which makes it slower but very reliable. That’s why it’s used for things like websites, emails, or file transfers — where accuracy matters.
+On the other hand, UDP is like a fast talker who sends messages quickly without waiting for a response. It’s faster because it doesn’t worry about lost packets or order. That’s perfect for real-time stuff like online games, voice calls, or video streaming, where speed is more important than perfection.
 
----
+⸻
 
-## 🦠 Malware Analysis
+🆔 2. MAC Address (Media Access Control Address)
 
-* **Static** – Constant (no execution)
-* **Dynamic** – Varying, observed during runtime (runtime analysis)
+A MAC address is like the fingerprint of your device’s network card. It’s a unique code (usually shown like 00:1A:2B:3C:4D:5E) that helps your device talk to others on the same local network. It’s built into the hardware and isn’t used on the wider internet. Interestingly, MAC addresses can be faked (called “spoofing”), often for privacy or even hacking purposes.
 
-### Other Terms
+⸻
 
-* **Ata Software** – Advanced Threat Analytics; used to detect suspicious activities in a network.
-* **Prompt Injection** – A method to manipulate language models by injecting malicious input to alter responses.
-* **Bash** – Unix shell and command language, used to execute commands in Linux.
-* **Villain Framework** – A tool for reverse shell handling and payload delivery, used in post-exploitation.
-* **AV Scans** – Antivirus scans may detect malware in OS but **not in memory**.
+🌐 3. Networking
 
----
+Networking is basically how devices — like your phone, computer, or router — connect and talk to each other. It includes IP addresses (which act like mailing addresses), DNS (which turns website names into those addresses), and routing, which helps data find the best path. Ports help devices know which app is being talked to (like port 80 for websites). Behind it all are protocols like TCP/IP, ICMP, and ARP that make the internet tick.
 
-## 🔁 Git Usage
+⸻
 
-* How to clone from Git:
+📶 4. Subnetworking (Subnetting)
 
-  ```bash
-  git clone <https>
-  ```
-* Check repository status:
+Subnetting is just a fancy word for breaking a big network into smaller parts. It helps organize things better, boosts security, and makes networks easier to manage. To do this, we use something called a subnet mask — for example, /24 (or 255.255.255.0). This tells devices which part of an IP address refers to the network and which part to the individual device. A common setup like 192.168.1.0/24 allows up to 254 devices to connect and talk to each other.
 
-  ```bash
-  git status
-  ```
-* Add changes to staging:
+⸻
 
-  ```bash
-  git add .
-  ```
-* Commit changes:
+🛑 5. UAC (User Account Control)
 
-  ```bash
-  git commit -m "Your message"
-  ```
-* Push to remote:
+UAC is a built-in Windows feature that acts like a gatekeeper. Whenever an app tries to make important changes to your system, UAC steps in and asks, “Are you sure you want to do this?” This helps stop malware from sneaking in and doing damage without your permission. You can adjust how often UAC asks — from always prompting to (not recommended) never asking.
 
-  ```bash
-  git push
-  ```
----
-# chmod
-<img width="794" height="397" alt="image" src="https://github.com/user-attachments/assets/3eb26ee2-af46-4a77-9ebb-35827b890f1e" />
+⸻
+
+🕵️ 6. Active and Passive Information Gathering
+
+When gathering info on a target, there are two main approaches. Passive gathering is all about staying under the radar — using tools like WHOIS, Google searches, or Shodan to quietly collect data without touching the target directly. It’s stealthy and less likely to be detected.
+Active gathering involves directly interacting with the target — like scanning with Nmap, grabbing service banners, or doing DNS lookups. It gives more detail but is much more noticeable, which can raise alarms.
+
+⸻
+
+🔓 7. Pwned
+
+To be “pwned” basically means you’ve been compromised — whether it’s your computer, account, or entire system. The term comes from hacker culture and is popular in security challenges like CTFs (Capture The Flag) when someone gains control (usually root or admin). In the real world, you might see it in alerts from sites like HaveIBeenPwned.com, letting you know your email or password was leaked in a data breach.
+
+⸻
+
+🧩 8. API (Application Programming Interface)
+
+An API is like a waiter between two software systems — taking requests, delivering them, and returning responses. APIs let apps communicate smoothly, but they can also be a weak point if not secured properly. Some risks include attackers bypassing permissions, sending malicious input, or accessing sensitive data. That’s why APIs should be protected with things like API keys, OAuth, input checks, and rate limits to prevent abuse.
+
+⸻
+
+📡 9. Nmap (Network Mapper)
+
+Nmap is a powerful, free tool used by security professionals (and hackers) to discover devices on a network and learn what services they’re running. It can scan for open ports, detect operating systems, identify software versions, and even run scripts for deeper analysis. Some handy commands include:
+	•	nmap -sS 192.168.1.1 for a stealthy scan,
+	•	nmap -A example.com for a deep dive with OS and version detection,
+	•	nmap -p 80,443 10.0.0.0/24 to check specific ports across a whole subnet.
