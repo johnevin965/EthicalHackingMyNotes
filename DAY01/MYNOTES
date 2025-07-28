@@ -1,0 +1,77 @@
+Day 01 – Introduction to Cybersecurity & Ethical Hacking
+
+Date: 21st July 2025
+Instructor: Captain Vaishnavu C V (aka Vyshu)
+Track: Cybersecurity | Ethical Hacking
+
+🔐 What is Cybersecurity?
+
+Cybersecurity is all about protecting systems, networks, and data from attacks. These attacks could try to:
+
+Steal or change sensitive info
+
+Cause damage or shutdowns
+
+Ask for ransom (like ransomware attacks)
+
+A quote that really stuck with me:
+“Cybersecurity is not just a tech issue – it’s also about people and business.”
+
+🛡️ Three Main Domains in Cybersecurity:
+
+🔵 Blue Team (Defense)
+
+Their job is to protect systems and respond to attacks.
+
+Tools: SIEM, IDS/IPS, EDR, Firewalls
+
+Tasks: Monitoring logs, patching systems, threat hunting
+
+🔴 Red Team (Attack/Ethical Hacking)
+
+They simulate real-world attacks to find weaknesses.
+
+Tools: Kali Linux, Metasploit, Nmap, Burp Suite
+
+Tasks: Pen testing, exploiting, social engineering
+
+🟣 Purple Team (Collaboration)
+
+These folks connect Red + Blue teams.
+
+They make both teams stronger by sharing tactics and doing joint exercises.
+
+✅ What I Learned Today (as an L1 Beginner):
+
+What cybersecurity is and why it matters
+
+The 3 major teams (Red, Blue, Purple) and what each does
+
+Some common tools used in ethical hacking and defense
+
+That ethical hacking is not just about hacking — it’s about doing it responsibly
+
+🧠 Beginner Mindset Notes:
+
+Always think: “How would I break this system?” and “How would I protect it?”
+
+Time to get more comfortable with terminals and networking basics
+
+Stay curious and don’t be afraid to experiment (in a safe lab!)
+
+📌 To-Do / Next Steps:
+
+Set up my lab (VirtualBox + Kali Linux ✅)
+
+Look up some big cyberattacks (WannaCry, Equifax, etc.) and how they were handled
+
+Study basic cybersecurity terms like:
+
+CIA Triad (Confidentiality, Integrity, Availability)
+
+Threat, Vulnerability, Exploit
+
+🚀 Final Thought:
+
+This is just Day 1. It's going to take time, but I’m excited.
+Cybersecurity is a journey — not a quick course. Stay consistent!
